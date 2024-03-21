@@ -1,0 +1,10 @@
+<app-action-bar title="Today's Challenge" [showBackButton]="false"></app-action-bar>
+<FlexboxLayout class="page" *ngIf="!currnetDay">
+    <Label text="No challenge found!"></Label>
+    <Button class="btn btn-primary" text="Create One!"  nsRouterLink="/challenges/replace" pageTransition="slideLeft"></Button>
+  </FlexboxLayout>
+<FlexboxLayout class="page" *ngIf="currnetDay">
+    <Label class="h1" [text]="currnetDay.date | date"></Label>
+    <app-challenge-actions (actionSelect)="onInput($event)" cancleText="Reset"></app-challenge-actions>
+</FlexboxLayout> 
+  

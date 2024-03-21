@@ -1,0 +1,85 @@
+@import '@nativescript/theme/css/core.css';
+
+@import './theme/colors';
+
+
+// @import '~nativescript-theme-core/scss/index';
+.fa {
+  font-family: 'FontAwesome', 'Font-Awesome';
+}
+
+.far {
+  font-family: "Font-Awesome", "Font-Awesome","fontawesome-webfont";
+  font-weight: 400;
+}
+ActionBar{
+  background: $primary;
+  color: white;
+}
+
+
+.form {
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.form {
+
+  .input-field {
+    width: 80%;
+
+    .label {
+      color: $primary;
+      font-weight: bold;
+      font-family: 'Oswald', 'Oswald-Regular', 'Oswald-Bold';
+    }
+
+    .label.invalid {
+      color: red;
+    }
+
+    .input {
+      border-bottom-width: 2;
+      border-bottom-color: $primary;
+      width: 100%;
+      color: black;
+    }
+
+    .input.ng-invalid.ng-touched {
+      border-bottom-color: red;
+      color: red;
+    }
+  }
+}
+
+
+.h1{
+  font-weight: bold;
+  color: $primary;
+  font-family: 'Oswald', 'Oswald-Regular', 'Oswald-Bold';
+}
+
+// Button.-primary {
+//     font-size: 18;
+//   }
+  
+  .drawer-container {
+    background: linear-gradient(140deg, #7057a5, #72638f);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20;
+    .btn{
+      width: 80%;
+      font-size: 20 ;
+    }
+  }
+  
+  .btn-flat {
+    background: transparent;
+    border-color: transparent;
+    width: 70%;
+    border-width: 1;
+    color: $primary;
+  }
